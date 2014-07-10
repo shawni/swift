@@ -1,0 +1,5 @@
+#!/bin/bash
+for socket in $(ls /tmp/tmux-${UID}); do
+echo $socket
+tmux -L $socket list-sessions
+done
