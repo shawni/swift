@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+#chomp ($KEYCHAIN = qx(ls /tmp/keyring*/ssh|head -1));
+chomp ($KEYCHAIN = qx(ls /tmp/ssh*/agent.*|head -1));
+$cmd = "export SSH_AUTH_SOCK=$KEYCHAIN";
+$HOME = $ENV{'HOME'} || "/tmp";
+open (OUT, ">$HOME/fkey");
+print OUT $cmd."\n";
+close (OUT);

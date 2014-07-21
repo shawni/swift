@@ -1,0 +1,2 @@
+#!/bin/bash
+xpra start ssh:$1:60 --encoding rgb

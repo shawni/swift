@@ -1,0 +1,5 @@
+#!/bin/bash
+# source this file with '. xpstart'
+. $HOME/fkey
+xpra start :60 --bind-tcp=:16010
+export DISPLAY=:60
