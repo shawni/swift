@@ -1,0 +1,2 @@
+#!/bin/bash
+/bin/cat ~/notes/`date +%F`.notes.txt
