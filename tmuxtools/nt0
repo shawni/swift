@@ -1,2 +1,2 @@
 #!/bin/bash
-exec /usr/bin/tmux new-seesion -s 0
+exec /usr/bin/tmux new-session -s 0
