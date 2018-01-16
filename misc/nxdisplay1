@@ -1,0 +1,4 @@
+#!/bin/bash
+/usr/bin/Xvfb :5 -fbdir $HOME/fb -screen 0 1880x1000x16 >/dev/null 2>&1 &
+sleep 1
+DISPLAY=:5 /usr/bin/startlxde >/dev/null 2>&1 &
