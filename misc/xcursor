@@ -1,0 +1,9 @@
+#!/bin/bash
+# blinking block
+echo -e -n "\x1b[\x31 q"
+# steady block
+#echo -e -n "\x1b[\x32 q"
+# blinking underline
+#echo -e -n "\x1b[\x33 q"
+# steady underline
+#echo -e -n "\x1b[\x34 q"
